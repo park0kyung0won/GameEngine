@@ -1,0 +1,72 @@
+[------------------------------------------------------------------------------]
+
+./GameEngine
+
+Base folder for the project
+Includes configure scripts and
+Makefile for compilation
+
+[------------------------------------------------------------------------------]
+
+./GameEngine/cores
+
+Contains core files for the game engine
+Including main.c for engine entry point
+Most of files would be *.c files or *.cpp
+
+[------------------------------------------------------------------------------]
+
+./GameEngine/includes
+
+Contains used libraries for the game engine
+Including SDL and Javascript engine
+Most of files would be *.c or *.cpp
+
+[------------------------------------------------------------------------------]
+
+./GameEngine/modules
+
+Contains GameEngine elements, which are not
+core parts of the engine, but features that people may want to add
+like better physics or AI modules.
+These are compiled runtime elements
+You can link or unlink these "modules" from game engine
+We seperated this part from cores for better exensibility
+Most of files would be *.c or *.cpp
+
+[------------------------------------------------------------------------------]
+
+./GameEngine/scripts
+
+Contains Game elements(rather than GameEngine).
+These scripts will be interpreted by Javascript engine
+and control Game behaviors
+If some part of your game is not computationally heavy
+and has complex behavior, rather than implementing it to *.c file,
+consider using scripts.
+Most of files would be *.js
+
+[------------------------------------------------------------------------------]
+
+./GameEngine/assets
+
+Contains assets for the game
+like sounds, sprites and animations
+assets folder can further subdivided into assets/sounds, assets/arts...
+Most of files would be sound files, pictures or *.js files.
+
+[------------------------------------------------------------------------------]
+
+./GameEngine/etc
+
+We may have some files not fitting into any of other folders
+We'll keep those in here
+
+[------------------------------------------------------------------------------]
+
+./GameEngine/docs
+
+Contains documentations about GameEngine.
+Most of files would be *.txt files.
+
+[------------------------------------------------------------------------------]
